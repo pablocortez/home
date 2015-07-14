@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <style type="text/css">
+      html {
+        background-color:#fff;
+        /*font-family: Monaco, Consolas, "Lucida Console", monospace;*/
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size:17px;
+        color:#424242;
+        line-height:1.4;
+        max-width:60rem;
+        margin: 0 auto;
+        margin-top: 30%;
+      }
+
+      body {
+
+      }
+
+      #notes {
+        background-color:#fff;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+        padding:60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cards">
+
+    </div>
+    <p id="notes" contentEditable="true" placeholder="Write quick memos here.">
+        
+    </p>
+  </body>
+  <script type="text/javascript">
+    var today = new Date();
+    today.getDate();
+
+    var day = today.getDate();
+    var month = today.getMonth();
+    var year = today.getFullYear();
+
+    var monthArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Seprember', 'October', 'November', 'December'];
+
+    // Formatted Date: DD Month YYYY
+    var date = day + ' ' + monthArray[month] + ' ' + year;
+  </script>
+</html>
