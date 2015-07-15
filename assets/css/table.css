@@ -1,0 +1,29 @@
+
+* {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+table {
+  text-align: center;
+  height: 100%;
+}
+
+td, tr {
+  width: 33.33%;
+  line-height: 40px;
+  font-weight: 100;
+}
+
+#titles {
+  font-weight: 200;
+  font-size: 35px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
