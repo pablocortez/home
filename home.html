@@ -1,88 +1,8 @@
 <html>
   <head>
-    <style type="text/css">
-      html {
-        border: 1px solid blue;
-        background-color: #fff;
-        /*font-family: Monaco, Consolas, "Lucida Console", monospace;*/
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size:17px;
-        color:#424242;
-        line-height:1.4;
-        /*max-width:60rem;*/
-        margin: 0 auto;
-      }
-
-      body {
-        border: 1px solid red;
-        margin: 0 auto;
-        padding: 0;
-        overflow: hidden;
-      }
-
-      .topArea {
-        z-index: 3;
-        postion: relative;
-        height: 70%;
-        width: 100%;
-
-        overflow-y: hidden;
-      }
-
-      .myInfo, .bookmarks {
-        position: relative;
-        margin: 0;
-        display: inline-block;
-        height: 100%;
-      }
-      .myInfo {
-        float: left;
-        width: 29%;
-        border: 1px solid pink;
-        text-align: center;
-        padding: 10;
-        padding-top: 50;
-        margin: 0 auto;
-      }
-
-      .myInfo p {
-        color: black;
-      }
-
-      #theTime {
-        font-size: 80px;
-        margin-bottom: 15px;
-      }
-
-      #theDate {
-        margin: 0 auto;
-        font-size: 40px;
-        font-weight: 400;
-      }
-
-      .bookmarks {
-        float: right;
-        width: 70%;
-        border: 1px dotted green;
-
-      }
-
-      #notes {
-        z-index: 1;
-        font-size: 18px;
-        display: block;
-        margin: 0 auto;
-        margin-top: 2%;
-        background-color:#fff;
-        box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
-        padding:40px;
-        max-width:60rem;
-        height: 500px;
-        width: 100%;
-        overflow-y: scroll;
-      }
-
-    </style>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/media/LSG-CORTEZ/WebDev/home.ml/assets/css/table.css" media="screen" title="no title" charset="utf-8">
   </head>
 
   <body onload=startTime()>
@@ -96,7 +16,32 @@
           </p>
       </div>
       <div class="bookmarks">
-
+        <table style="width:100%">
+            <tr id="titles" style="font-weight: bold">
+              <td>WORK</td>
+              <td>ENTERTAINMENT</td>
+              <td>CODING</td>
+            </tr>
+            <tr>
+              <td><a href="https://inbox.google.com/" target="_blank">Inbox</a></td>
+              <td><a href="https://netflix.com/" target="_blank">Netflix</a></td>
+              <td><a href="https://codepen.io/" target="_blank">Codepen</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://calendar.google.com/" target="_blank">Calendar</a></td>
+              <td><a href="https://reddit.com/" target="_blank">Reddit</a></td>
+              <td><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></td>
+            </tr><tr>
+              <td><a href="https://drive.google.com/" target="_blank">Drive</a></td>
+              <td><a href="https://youtube.com/" target="_blank">YouTube</a></td>
+              <td><a href="http://techether.com/" target="_blank">Techeter</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://codio.com/" target="_blank">Codio</a></td>
+              <td><a href="https://play.spotify.com/" target="_blank">Spotify</a></td>
+              <td><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a></td>
+            </tr>
+          </table>
       </div>
     </div>
     <div class="noteArea">
@@ -121,7 +66,7 @@
       if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
       return i;
     }
-    
+
     //Display Date
     var theDate = function() {
       var today = new Date();
