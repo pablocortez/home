@@ -1,0 +1,12 @@
+{
+  "name": "My New Tab",
+  "description": "An option for Chrome's New Tab",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "icons": {
+    "128": "icon.png"
+  },
+   "chrome_url_overrides" : {
+    "newtab": "home.html"
+  }
+}
